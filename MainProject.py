@@ -3,7 +3,8 @@ import cv2
 
 vidCap = cv2.VideoCapture(0)
 ret, frame = vidCap.read()
-height, width, _ = frame.shape
+height, width, sss = frame.shape
+print(height, width, sss)
 
 while True:
     ret, frame = vidCap.read()
